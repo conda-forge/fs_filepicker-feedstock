@@ -1,6 +1,6 @@
 {% set name = "fs_filepicker" %}
 {% set version = "0.0.3" %}
-{% set sha256 = "aac0d7cd8fb064d108db08399dbf2600040f597b6c381398dceee92dd14cbd25" %}
+{% set sha256 = "a8a1a2aa2febfdbd132f1785bbb4ed9b38d34658d5fe34d8d52f1888b74a1805" %}
 
 package:
   name: {{ name|lower }}
