@@ -27,6 +27,7 @@ requirements:
     - python
     - pyqt 5.*
     - fs
+    - fs.webdavfs
     - future
 
 test:
