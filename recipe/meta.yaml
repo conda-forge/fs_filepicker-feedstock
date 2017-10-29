@@ -1,6 +1,6 @@
 {% set name = "fs_filepicker" %}
-{% set version = "0.0.8" %}
-{% set sha256 = "0205d64a768ca80a0dd1d5e10e1d6ada05acb7a7bfb7f9746db0a2543e479fc5" %}
+{% set version = "0.0.9" %}
+{% set sha256 = "abade382c624a17fb5c6777da4ebfe1a83c4858f0c0d45ee78d60af3e7e6b1a9" %}
 
 package:
   name: {{ name|lower }}
@@ -27,6 +27,7 @@ requirements:
     - python
     - pyqt 5.*
     - fs
+    - fs.webdavfs
     - future
 
 test:
