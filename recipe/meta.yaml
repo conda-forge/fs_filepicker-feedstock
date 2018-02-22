@@ -1,6 +1,6 @@
 {% set name = "fs_filepicker" %}
-{% set version = "0.2.5" %}
-{% set sha256 = "47751773b10b7b29ff1ec97b9c94d15cb207b53ef6c07288dfa2faefd2b174fa" %}
+{% set version = "0.2.6" %}
+{% set sha256 = "589e1c386017ebc927dbfbc6a0b2a65c9cf50d99bd27628541d4a32e68ebb0d2" %}
 
 package:
   name: {{ name|lower }}
@@ -42,7 +42,7 @@ about:
   home: https://github.com/ReimarBauer/fs_filepicker
   license: APACHE 2.0
   license_file: LICENSE
-  summary: 'QT file picker (Open|Save) for accessing a pyfilesystem2'
+  summary: 'QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2'
   dev_url: https://github.com/ReimarBauer/fs_filepicker
 
 extra:
