@@ -7,7 +7,7 @@ Package license: APACHE 2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: QT file picker (Open|Save) for accessing a pyfilesystem2
+Summary: QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2
 
 
 
