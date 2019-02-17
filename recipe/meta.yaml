@@ -12,11 +12,10 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
-  number: 1
+  number: 2
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
-  script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps  --ignore-installed .
 
 requirements:
   host:
@@ -42,7 +41,8 @@ test:
 
 about:
   home: https://github.com/ReimarBauer/fs_filepicker
-  license: APACHE 2.0
+  license: "Apache 2.0"
+  license_family: "APACHE"
   license_file: LICENSE
   summary: 'QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2'
   dev_url: https://github.com/ReimarBauer/fs_filepicker
