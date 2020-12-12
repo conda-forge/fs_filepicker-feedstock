@@ -110,17 +110,10 @@ jobs:
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
-<<<<<<< HEAD
-        upload_package  .\ ".\recipe" .ci_support\%CONFIG%.yaml
-      displayName: Upload package
-      env:
-        BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-=======
         upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
       displayName: Upload package
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
         FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
         STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
->>>>>>> 31db539ac06e47efa5dedcf56a02b46f4e1c75ea
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))
