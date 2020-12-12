@@ -17,6 +17,9 @@ jobs:
       win_64_python3.8.____cpython:
         CONFIG: win_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
+      win_64_python3.9.____cpython:
+        CONFIG: win_64_python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
@@ -97,13 +100,27 @@ jobs:
       env:
         PYTHONUNBUFFERED: 1
       condition: not(contains(variables['CONFIG'], 'vs2008'))
+    - script: |
+        set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
+        call activate base
+        validate_recipe_outputs "%FEEDSTOCK_NAME%"
+      displayName: Validate Recipe Outputs
 
     - script: |
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
+<<<<<<< HEAD
         upload_package  .\ ".\recipe" .ci_support\%CONFIG%.yaml
       displayName: Upload package
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+=======
+        upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
+      displayName: Upload package
+      env:
+        BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
+        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 31db539ac06e47efa5dedcf56a02b46f4e1c75ea
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))
