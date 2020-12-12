@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ReimarBauer/fs_filepicker/archive/{{ version }}.tar.gz
+  url: https://github.com/open-mss/fs_filepicker/archive/{{ version }}.tar.gz
   sha256: 27c1faad8ecee48a507b626b2caac6181e9bf5019d96d83de4932051bf125798
 
 build:
@@ -35,15 +35,9 @@ test:
     - fs_filepicker -h
 
 about:
-<<<<<<< HEAD
   home: https://github.com/open-mss/fs_filepicker
   license: "Apache 2.0"
   license_family: "APACHE"
-=======
-  home: https://github.com/ReimarBauer/fs_filepicker
-  license: Apache-2.0
-  license_family: APACHE
->>>>>>> 31db539ac06e47efa5dedcf56a02b46f4e1c75ea
   license_file: LICENSE
   summary: 'QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2'
   dev_url: https://github.com/open-mss/fs_filepicker
