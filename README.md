@@ -1,7 +1,7 @@
 About fs_filepicker
 ===================
 
-Home: https://github.com/ReimarBauer/fs_filepicker
+Home: https://github.com/open-mss/fs_filepicker
 
 Package license: Apache-2.0
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fs_filepicker-f
 
 Summary: QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2
 
-Development: https://github.com/ReimarBauer/fs_filepicker
+Development: https://github.com/open-mss/fs_filepicker
 
 Current build status
 ====================
