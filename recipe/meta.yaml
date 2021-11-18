@@ -9,7 +9,7 @@ source:
   sha256: 27c1faad8ecee48a507b626b2caac6181e9bf5019d96d83de4932051bf125798
 
 build:
-  number: 4
+  number: 5
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
