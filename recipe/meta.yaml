@@ -9,18 +9,19 @@ source:
   sha256: 27c1faad8ecee48a507b626b2caac6181e9bf5019d96d83de4932051bf125798
 
 build:
-  number: 4
+  number: 5
+  noarch: python
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - future
   run:
-    - python
+    - python >=3.6
     - pyqt
     - humanfriendly
     - fs
@@ -36,10 +37,10 @@ test:
 
 about:
   home: https://github.com/open-mss/fs_filepicker
-  license:  "Apache-2.0"
-  license_family: "APACHE"
+  license:  Apache-2.0
+  license_family: APACHE
   license_file: LICENSE
-  summary: 'QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2'
+  summary: QT file picker (Open|Save|GetDirectory) for accessing a pyfilesystem2
   dev_url: https://github.com/open-mss/fs_filepicker
 
 extra:
