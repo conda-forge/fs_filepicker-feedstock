@@ -9,7 +9,7 @@ source:
   sha256: bf1b42a3ddf0302f46fdb4b98d7c3b046c5c92d3c7e1d84377a1ad441a7fac19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
@@ -18,9 +18,8 @@ build:
 requirements:
   host:
     - pip
-    - python <3.11.0
+    - python
     - setuptools
-    - future
   run:
     - python <3.11.0
     - pyqt >=5, <5.13
@@ -29,7 +28,7 @@ requirements:
     - fs
     - fs.webdavfs
     - fs.sshfs
-    - future
+
 test:
   imports:
     - fslib.fs_filepicker
