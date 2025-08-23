@@ -1,4 +1,4 @@
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/open-mss/fs_filepicker/archive/{{ version }}.tar.gz
-  sha256: bf1b42a3ddf0302f46fdb4b98d7c3b046c5c92d3c7e1d84377a1ad441a7fac19
+  sha256: 58bcb8e6003997fca5101b0a12c7e169511fa012eb7464e8ea360ad7d89bc73c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
