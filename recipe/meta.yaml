@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python {{ 3.10 }}
+    - python >={{ 3.10 }}
     - setuptools
   run:
     - python >={{ 3.10 }}
@@ -32,7 +32,7 @@ requirements:
 
 test:
   requires:
-    - python {{ 3.10 }}
+    - python >={{ 3.10 }}
   imports:
     - fslib.fs_filepicker
   commands:
