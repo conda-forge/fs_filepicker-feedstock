@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python {{ 3.10 }}
     - setuptools
   run:
-    - python
+    - python >={{ 3.10 }}
     - pyqt >=5, <5.13
     - qt >=5.10, <5.13
     - humanfriendly
@@ -30,6 +30,8 @@ requirements:
     - fs.sshfs
 
 test:
+  requires:
+    - python {{ 3.10 }}
   imports:
     - fslib.fs_filepicker
   commands:
