@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >={{ 3.10 }}
+    - python >={{ python_min }}
     - setuptools
   run:
-    - python >={{ 3.10 }}
+    - python >={{ python_min }}
     - pyqt >=5, <5.13
     - qt >=5.10, <5.13
     - humanfriendly
@@ -32,7 +32,7 @@ requirements:
 
 test:
   requires:
-    - python >={{ 3.10 }}
+    - python >={{ python_min }}
   imports:
     - fslib.fs_filepicker
   commands:
