@@ -10,7 +10,7 @@ source:
   sha256: 58bcb8e6003997fca5101b0a12c7e169511fa012eb7464e8ea360ad7d89bc73c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - fs_filepicker = fslib.fs_filepicker:main
