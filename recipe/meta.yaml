@@ -23,8 +23,8 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - pyqt >=5, <5.13
-    - qt >=5.10, <5.13
+    - pyqt >=5, <6
+    - qt >=5.10, <6
     - humanfriendly
     - fs
     - fs.webdavfs
